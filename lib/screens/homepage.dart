@@ -29,7 +29,18 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white,
         child: DrawerPage(),
       ),
-      body: Text(AuthService.fromFirebase().currentuser!.name.toString()),
+      body: const Center(
+        child: Text(
+          "Please Navigate through drawer for particular sets",
+          style: TextStyle(
+            fontSize: 20,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.w400,
+            letterSpacing: 1.2,
+            color: Colors.black,
+          ),
+        ),
+      ),
     );
   }
 }
