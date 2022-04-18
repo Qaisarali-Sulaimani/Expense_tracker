@@ -1,5 +1,4 @@
 import 'package:expense_tracker/screens/Expense%20Tracker/expense_tracker.dart';
-import 'package:expense_tracker/screens/TaskManager/by_pagination.dart';
 import 'package:expense_tracker/screens/firstinfopage.dart';
 import 'package:expense_tracker/screens/homepage.dart';
 import 'package:expense_tracker/screens/login.dart';

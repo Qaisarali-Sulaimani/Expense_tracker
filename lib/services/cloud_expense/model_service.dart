@@ -78,6 +78,21 @@ class FirebaseCloudStorageExpense {
     };
   }
 
+  Future<Map<String, double>> getAll(bool isTrue) async {
+    final task = await transactions.get();
+    Map<String, double> done = {};
+    for (var i in task.docs) {
+      String s = i[myDetails] as String;
+      int val = i[myAmount] as int;
+
+      if (i[myType] as bool == isTrue) {
+        done[s] = val.toDouble();
+      }
+    }
+
+    return done;
+  }
+
   Query<Map<String, dynamic>> myQuery(String s) {
     return transactions.orderBy(s);
   }

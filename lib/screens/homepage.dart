@@ -1,4 +1,3 @@
-import 'package:expense_tracker/services/auth/auth_service.dart';
 import 'package:flutter/material.dart';
 
 import 'drawer_page.dart';
@@ -32,6 +31,7 @@ class _HomePageState extends State<HomePage> {
       body: const Center(
         child: Text(
           "Please Navigate through drawer for particular sets",
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 20,
             fontStyle: FontStyle.italic,

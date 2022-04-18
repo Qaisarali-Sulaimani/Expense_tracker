@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:expense_tracker/screens/Expense%20Tracker/add_in_expense.dart';
 import 'package:expense_tracker/services/cloud_expense/model_service.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class _ExpenseListState extends State<ExpenseList> {
 
   @override
   void initState() {
-    timer = Timer.periodic(const Duration(seconds: 3), (Timer t) => doWork());
+    timer = Timer.periodic(const Duration(seconds: 2), (Timer t) => doWork());
     super.initState();
   }
 

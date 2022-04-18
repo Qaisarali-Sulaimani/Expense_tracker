@@ -1,6 +1,8 @@
 import 'package:expense_tracker/constants.dart';
 import 'package:expense_tracker/screens/Expense%20Tracker/expense_list.dart';
 import 'package:flutter/material.dart';
+import 'charts.dart';
+import 'insights.dart';
 
 class ExpenseTracker extends StatefulWidget {
   const ExpenseTracker({Key? key}) : super(key: key);
@@ -20,14 +22,8 @@ class _ExpenseTrackerState extends State<ExpenseTracker> {
 
   static const List<Widget> _pages = <Widget>[
     ExpenseList(),
-    Icon(
-      Icons.camera,
-      size: 150,
-    ),
-    Icon(
-      Icons.chat,
-      size: 150,
-    ),
+    Charts(),
+    Insights(),
   ];
 
   @override
@@ -37,10 +33,7 @@ class _ExpenseTrackerState extends State<ExpenseTracker> {
         title: const Text("Expense Tracker"),
         backgroundColor: Colors.purple[900],
       ),
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: _pages,
-      ),
+      body: _pages.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
