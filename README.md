@@ -1,16 +1,10 @@
-# expense_tracker
+# Expense Tracker
 
-A new Flutter project.
+A Flutter app with following features:
 
-## Getting Started
+• Built expense tracking app with add on functionality of adding notes in Flutter.</br>
+• Used Firebase for Authentication of users and Cloud Firestore for storing of data.</br>
+• Added real time changing of net balance and filtering of notes.</br>
+• Provided pagination to improve app performance.</br>
+• Added an option to filter the data based on various parameters.</br>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
